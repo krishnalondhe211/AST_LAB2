@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:textSize="15dp"
+        android:text="Full Name"/>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Date of birth"/>
+
+    <EditText
+        android:id="@+id/etdob"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter DOB"
+        android:inputType="date"
+        />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Select Gender" />
+    <RadioGroup
+    android:id="@+id/rgbtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/rbmale"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Male" />
+
+    <RadioButton
+        android:id="@+id/rbfemale"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Female" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Available Documents" />
+
+    <CheckBox
+        android:id="@+id/cbaadhar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Aadhar Card" />
+
+    <CheckBox
+        android:id="@+id/cbrashan"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Rashan Card" />
+
+    <CheckBox
+        android:id="@+id/cbpan"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Pan Card" />
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Phone Number"/>
+
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone no"
+        android:inputType="date"
+        />
+    <TextView
+        android:id="@+id/tvmsg"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text=""
+        android:textColor="#FF0000"
+        />
+    <Button
+        android:id="@+id/btsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+
+
+</LinearLayout>
