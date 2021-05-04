@@ -1,4 +1,4 @@
-package com.krishna_londhe.ast_lab_exp_2;
+package com.krishna_londhe.ast_lab_exp_7;
 
 import org.junit.Test;
 

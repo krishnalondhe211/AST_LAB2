@@ -1,14 +1,13 @@
-package com.krishna_londhe.ast_lab_exp_2;
+package com.krishna_londhe.ast_lab_exp_7;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.inputmethodservice.ExtractEditText;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -60,17 +59,17 @@ public class MainActivity extends AppCompatActivity {
                  sdob=dob.getText().toString();
                  sphoneno=phoneno.getText().toString();
 
-                 if(!aadharcard.isChecked())
+                 if(aadharcard.isChecked())
                  {
-                     available_doc+="Aadhar Card\n";
+                     available_doc+="Aadhar Card ";
                  }
-                 else if(!rashancard.isChecked())
+                 else if(rashancard.isChecked())
                  {
-                     available_doc+="PAN Card\n";
+                     available_doc+="PAN Card ";
                  }
-                 else if(!rashancard.isChecked())
+                 else if(rashancard.isChecked())
                  {
-                     available_doc+="Rashan Card\n";
+                     available_doc+="Rashan Card ";
                  }
 
 
@@ -98,6 +97,10 @@ public class MainActivity extends AppCompatActivity {
                  if(!sname.isEmpty() && !sdob.isEmpty() && !sphoneno.isEmpty() && !available_doc.isEmpty())
                  {
                      Toast.makeText(MainActivity.this,"Success",Toast.LENGTH_LONG).show();
+                     String message="Name: "+sname+"\n"+str_gender+"\n"+"DOB: "+sdob+"\n"+"Phone NO: "+sphoneno+"\n"+available_doc;
+                     Intent user=new Intent(MainActivity.this,UserInfo.class);
+                     user.putExtra("message",message);
+                     startActivity(user);
                  }
 
 
